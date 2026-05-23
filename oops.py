@@ -190,10 +190,59 @@ self is the mandatory argument to pass for the __init__ method .
 We can pass arguments in the object creation only if there is __init__ method present inside the class.
 __init__ is the constructor method in python.
 
-For __init__ method, passing self is mandatory to store the address of the object. 
+For __init__ method, passing self is mandatory to store the address of the object.
+
+Syntax:
+class Cname:
+    Block of code
+    def __init__(self, var1, var2, ....varn):
+        self.var1 = var1
+        self.var2 = var2
+        self.......
+        .
+        .
+        .
+        self.varn = varn
+    
+obj_name = Cname(val1, val2, .....valn)
+
+
+class School:
+    sname = "Carmel"
+    location = "Bangalore"
+    principal = "Alavya"
+    timing = "9:00 to 12:00"
+    def __init__(self, name, id, age, bg):
+        self.name = name
+        self.id = id
+        self.age = age
+        self.bg = bg
+
+st1 = School("Akanksha", 16, 24, "B+")
+print(st1.name, st1.id, st1.age, st1.bg, st1.sname, st1.location, st1.principal, st1.timing)
+
+st2 = School("Alavya", 17, 20, "AB+")
+print(st2.name, st2.id, st2.age, st2.bg, st2.sname, st2.location, st2.principal, st2.timing)
+    
+ 
 
 '''
+class School:
+    sname = "Carmel"
+    location = "Bangalore"
+    principal = "Alavya"
+    timing = "9:00 to 12:00"
+    def __init__(self, name, id, age, bg):
+        self.name = name
+        self.id = id
+        self.age = age
+        self.bg = bg
 
+st1 = School("Akanksha", 16, 24, "B+")
+print(st1.name, st1.id, st1.age, st1.bg, st1.sname, st1.location, st1.principal, st1.timing)
+
+st2 = School("Alavya", 17, 20, "AB+")
+print(st2.name, st2.id, st2.age, st2.bg, st2.sname, st2.location, st2.principal, st2.timing)
 
 
 
