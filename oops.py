@@ -405,5 +405,23 @@ st2.display()
 st2.ch_time("9:00 to 1:00")
 st2.display()
     
+class Company:
+    cname = "Capgemini"
+    location = "Bangalore"
+    HR = "Aditya"
+    
+    @classmethod
+    def display(cls):
+        print(cls.cname, cls.location, cls.HR)
+        
+    @classmethod
+    def ch_HR(cls, new):
+        cls.HR = new
+        
+emp1 = Company()
 
+emp1.display()
+emp1.ch_HR("Gadha")
+
+emp1.display()
 
