@@ -180,6 +180,7 @@ class Demo:
         print("hi")
         
 show() is a method.
+
 Constructor/ __init__ / initialisation
 
 Constructor is a special method .
@@ -223,26 +224,71 @@ print(st1.name, st1.id, st1.age, st1.bg, st1.sname, st1.location, st1.principal,
 
 st2 = School("Alavya", 17, 20, "AB+")
 print(st2.name, st2.id, st2.age, st2.bg, st2.sname, st2.location, st2.principal, st2.timing)
-    
+  
+
+~ wap to create a company having 3 class members and 1 object with 4 object member.
+
+  class Company:
+    cname = "Capgemini"
+    location = "Bangalore"
+    HR = "Aditya"
+    def __init__(self, name, empid, age, department):
+        self.name = name
+        self.empid = empid
+        self.age = age
+        self.department = department
+
+emp1 = Company("Akanksha", 16, 24, "Python Trainer")
+print(emp1.name, emp1.empid, emp1.age, emp1.department, emp1.cname, emp1.location, emp1.HR)
  
 
+~ class makeup properties brand shade price smudgeproof
+class Makeup:
+    def __init__(self, brand, shade, price, smudgeproof):
+        self.brand = brand
+        self.shade = shade
+        self.price = price
+        self.smudgeproof = smudgeproof
+
+p1 = Makeup("Chnnel", "pink", 230, "no")
+p2 = Makeup("Gucci", "red", 2400, "yes")
+p3 = Makeup("Nyke", "black", 340, "no")
+p4 = Makeup("Mars", "blue", 2300, "yes")
+print(p1.brand, p1.shade, p1.price, p1.smudgeproof)
+print(p2.brand, p2.shade, p2.price, p2.smudgeproof)
+print(p3.brand, p3.shade, p3.price, p3.smudgeproof)
+print(p4.brand, p4.shade, p4.price, p4.smudgeproof)
+
+~ Wap to do right shift operation   o/p -> [2, 3, 4, 1]
+l = [1, 2, 3, 4]
+k = int(input("Enter number of rotation: "))
+for i in range(k):
+    l.append(l.pop(0))
+print(l)
+
+
+~ Wap ek chocolate shop hai usme alag alag price ki 4 chocolates hai 
+tumhare and dosto ke paas alag alag paise haii like 17 19 22 and all 
+to tumhe print karna hai ki tum kitni chocolate kharid sakte ho and kitne paise bache ya nahi bache everything 
+
+~ s = "Alavya" half se ulta
+
+
+METHODS
+it has 3 types 
+1. object method
+2. class method
+3. static method
+
+
+1. object method
+The method which is used to perform modification and some operations on the object member is known as object method
+They are used to access or modify the object members
+
 '''
-class School:
-    sname = "Carmel"
-    location = "Bangalore"
-    principal = "Alavya"
-    timing = "9:00 to 12:00"
-    def __init__(self, name, id, age, bg):
-        self.name = name
-        self.id = id
-        self.age = age
-        self.bg = bg
 
-st1 = School("Akanksha", 16, 24, "B+")
-print(st1.name, st1.id, st1.age, st1.bg, st1.sname, st1.location, st1.principal, st1.timing)
-
-st2 = School("Alavya", 17, 20, "AB+")
-print(st2.name, st2.id, st2.age, st2.bg, st2.sname, st2.location, st2.principal, st2.timing)
-
+s = "Aditya"  # output = idAtya
+l = len(s)
+a = l//2
 
 
