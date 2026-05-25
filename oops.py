@@ -284,11 +284,84 @@ it has 3 types
 1. object method
 The method which is used to perform modification and some operations on the object member is known as object method
 They are used to access or modify the object members
+it is ompulsary to pass self to store the address of the object
+
+Syntax:
+
+class Cname:
+    set of instructions
+    def mname(self):                      ~ to access
+        print(args)
+    def mname(self, new):                 ~ to modify
+        self.var = new
+
+object = Cname(val1, val2, ....)
+object.mname()    
+
+Example:
+
+class School:
+    sname = "Cambridge"
+    location = "Powayan"
+    principal = "Shaurya"
+    timing = "9:00 to 4:30"
+    
+    def __init__(self, name, stid, age, bg):
+        self.name = name
+        self.stid = stid
+        self.age = age
+        self.bg = bg
+        
+    def display(self):
+        print(self.name, self.stid, self.age, self.bg)
+        
+    def ch_age(self, new):
+        self.age = new
+
+st1 = School("Alavya", 23, 20, "AB+")
+st2 = School("Jalkiran", 24, 19, "A+")
+
+st1.display()
+st2.display()
+
+st2.ch_age(18)
+st2.display()
+
+
+
 
 '''
 
-s = "Aditya"  # output = idAtya
-l = len(s)
-a = l//2
+# s = "Aditya"  # output = idAtya
+# l = len(s)
+# a = l//2
+
+class School:
+    sname = "Cambridge"
+    location = "Powayan"
+    principal = "Shaurya"
+    timing = "9:00 to 4:30"
+    
+    def __init__(self, name, stid, age, bg):
+        self.name = name
+        self.stid = stid
+        self.age = age
+        self.bg = bg
+        
+    def display(self):
+        print(self.name, self.stid, self.age, self.bg)
+        
+    def ch_age(self, new):
+        self.age = new
+
+st1 = School("Alavya", 23, 20, "AB+")
+st2 = School("Jalkiran", 24, 19, "A+")
+
+st1.display()
+st2.display()
+
+st2.ch_age(18)
+st2.display()
+    
 
 
