@@ -328,6 +328,51 @@ st2.ch_age(18)
 st2.display()
 
 
+2. class method
+It is used to access and modify the class members
+We need to use "cls" as an argument to store the address of the class members.And it is compulsary to use 
+@classmethod is the decorative to use
+
+Syntax:
+
+class Cname:
+    set of instructions
+    @classmethod                                 ~ to access the class member
+    def mname(cls, args):
+        statements
+    @classmethod                                 ~ to modify the class member
+    def mname(cls, new):
+        cls.var = new
+object = Cname(val)
+Cname.mname(val)
+
+Example: 
+
+class School:
+    sname = "Cambridge"
+    location = "Powayan"
+    principal = "Shaurya"
+    timing = "9:00 to 4:30"
+    
+    @classmethod
+        
+    def display(cls):
+        print(cls.sname, cls.location, cls.principal, cls.timing)
+    
+    @classmethod    
+    def ch_time(cls, new):
+        cls.timing = new
+
+st1 = School()
+st2 = School()
+
+st1.display()
+st2.display()
+
+st2.ch_time("9:00 to 1:00")
+st2.display()
+
+
 
 
 '''
@@ -342,25 +387,22 @@ class School:
     principal = "Shaurya"
     timing = "9:00 to 4:30"
     
-    def __init__(self, name, stid, age, bg):
-        self.name = name
-        self.stid = stid
-        self.age = age
-        self.bg = bg
+    @classmethod
         
-    def display(self):
-        print(self.name, self.stid, self.age, self.bg)
-        
-    def ch_age(self, new):
-        self.age = new
+    def display(cls):
+        print(cls.sname, cls.location, cls.principal, cls.timing)
+    
+    @classmethod    
+    def ch_time(cls, new):
+        cls.timing = new
 
-st1 = School("Alavya", 23, 20, "AB+")
-st2 = School("Jalkiran", 24, 19, "A+")
+st1 = School()
+st2 = School()
 
 st1.display()
 st2.display()
 
-st2.ch_age(18)
+st2.ch_time("9:00 to 1:00")
 st2.display()
     
 
