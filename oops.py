@@ -373,55 +373,44 @@ st2.ch_time("9:00 to 1:00")
 st2.display()
 
 
+3. Static method
+It neither belongs to class members nor belongs to objectt members
+but it will act as a supportive method for both class and object.
+decorator -> @staticmethod
 
+Syntax:
+class Cname:
+    statements
+    @staticmethod
+    def mname(args):
+        statements
+object = Cname()
+
+
+Example:
+
+class Boring:
+    name = "Rehman"
+    role = "Student"
+    @staticmethod
+    def nonsense(a, b):
+        print(a + b)
+
+st1 = Boring()
+Boring.nonsense(10, 20)
+st1.nonsense(10, 20) 
+
+
+class Boring:
+    @staticmethod
+    def nonsense(a, b):
+        print(a + b)
+
+st1 = Boring()
+Boring.nonsense(10, 20)
+st1.nonsense(10, 20) 
+
+ 
 
 '''
-
-# s = "Aditya"  # output = idAtya
-# l = len(s)
-# a = l//2
-
-class School:
-    sname = "Cambridge"
-    location = "Powayan"
-    principal = "Shaurya"
-    timing = "9:00 to 4:30"
-    
-    @classmethod
-        
-    def display(cls):
-        print(cls.sname, cls.location, cls.principal, cls.timing)
-    
-    @classmethod    
-    def ch_time(cls, new):
-        cls.timing = new
-
-st1 = School()
-st2 = School()
-
-st1.display()
-st2.display()
-
-st2.ch_time("9:00 to 1:00")
-st2.display()
-    
-class Company:
-    cname = "Capgemini"
-    location = "Bangalore"
-    HR = "Aditya"
-    
-    @classmethod
-    def display(cls):
-        print(cls.cname, cls.location, cls.HR)
-        
-    @classmethod
-    def ch_HR(cls, new):
-        cls.HR = new
-        
-emp1 = Company()
-
-emp1.display()
-emp1.ch_HR("Gadha")
-
-emp1.display()
-
+       
