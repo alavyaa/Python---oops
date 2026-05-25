@@ -410,7 +410,12 @@ st1 = Boring()
 Boring.nonsense(10, 20)
 st1.nonsense(10, 20) 
 
+ Why is this static method?
+ 1. it does not use object members
+ 2. it does not use class members
+ 3. it works independently
  
+ static method is a normal helper funtion inside a class
 
 '''
        
