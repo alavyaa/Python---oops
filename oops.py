@@ -408,14 +408,79 @@ class Boring:
 
 st1 = Boring()
 Boring.nonsense(10, 20)
-st1.nonsense(10, 20) 
+st1.nonsense(10, 20)
 
- Why is this static method?
- 1. it does not use object members
- 2. it does not use class members
- 3. it works independently
- 
- static method is a normal helper funtion inside a class
+Why is this static method?
+1. it does not use object members
+2. it does not use class members
+3. it works independently
+
+static method is a normal helper funtion inside a class
+
 
 '''
-       
+
+
+'''
+MOCK INTERVIEW QUESTION PRACTICE
+
+~ wap to find the sum of all the integers in a list
+[10, 20 30, "Hello", None]
+l = [10, 20, 30, "Hello", None]
+sum = 0
+for i in l:
+    if type(i) is int:
+        sum = sum + i
+print(sum)
+
+~ sum until user enters zero
+sum = 0
+i = 0
+while i >= 0:
+    num = int(input("Enter number: "))
+    if num != 0:
+        sum = sum + num
+    else:
+        print(sum)
+
+
+~ wap to find second largest from a given list
+[10, 20, 25, 30, 35, 40]
+l = [10, 20, 25, 30, 35, 40]
+first = 0
+second = 0
+for i in l:
+    if i > first:
+        second = first
+        first = i
+    elif i > second and i != first:
+        second = i
+
+print("Second largest:", second)
+
+~ wap to check weater a number is prime or not
+num = int(input("Enter a number: "))
+is_prime = False
+
+if num > 1:
+    is_prime = True
+    for i in range(2, (num//2+1)):                               ~ we can also use range(2, num) but it will take more time to execute because it will check for all the numbers from 2 to num-1
+        if num % i == 0:
+            is_prime = False
+            break
+
+
+print("Is prime:", is_prime)
+
+~ remove duplicates from list without using inbuilt functions or typecasting
+l = [2,2,1,1,3,3,5,5,6,6]
+l = input("Enter list: ")
+out = []
+for i in l:
+    if i not in out:
+        out.append(i)
+print(out)
+
+'''
+
+
