@@ -472,6 +472,7 @@ if num > 1:
 
 print("Is prime:", is_prime)
 
+
 ~ remove duplicates from list without using inbuilt functions or typecasting
 l = [2,2,1,1,3,3,5,5,6,6]
 l = input("Enter list: ")
@@ -481,6 +482,31 @@ for i in l:
         out.append(i)
 print(out)
 
-'''
 
+~ wap to get following output
+input (12, 3.4, "hello", 2+3j, "python", 'bye', False)
+output {"hello":5, 'python':6,  'bye':3}
+t = (12, 3.4, "hello", 2+3j, "python", 'bye', False)
+out = {}
+for i in t:
+    if type(i) is str:
+        out[i] = len(i)   
+print(out)
+ 
+ 
+~ wap input  = 'abcabacbcbc'
+output = a3b4c4
+ s = 'abcabacbcbc'
+out = ""
+for i in s:
+    if i not in out:
+        count = 0
+        for j in s:
+            if i == j:
+                count = count + 1
+        out = out + i + str(count)
+print(out)
+ 
+ 
+'''
 
