@@ -507,9 +507,60 @@ for i in s:
         out = out + i + str(count)
 print(out)
  
- 
+
+~ take two coordinate i.e x and y and check in which points the data points are present 
+
+x = int(input("Enter x coordinate: "))
+y = int(input("Enter y coordinate: "))
+if x > 0 and y > 0 :
+    print("Coordinates are in First Quadrant")
+elif x < 0 and y < 0 :
+    print("Coordinates are in Third Quadrant")
+elif x < 0 and y > 0 :
+    print("Coordinates are in Second Quadrant")
+elif x > 0 and y < 0 :
+    print("Coordinates are in Fourth Quadrant")
+else:
+    print("Coordinates are on the axis or origin")
+    
+
+~ Wap to check the given character is uppercase , lowercase or digit or special character 
+
+BY CONDITIONS
+
+ch = input("Enter the character : ")
+if ch >= "a" and ch <= "z" :
+    print("The character is an lower case alphabet")
+elif ch >= "A" and ch <= "Z" :
+    print("The character is an upper case alphabet")
+elif ch >= "0" and ch <= "9":
+    print("The character is a digit")
+else:
+    print("The character is a special character")   
+    
+BY INBUILT FUNCTION 
+
+ch = input("Enter the character : ")
+if ch.isupper:
+    print("The character is an upper case alphabet")
+elif ch.islower:
+    print("The character is an lower case alphabet")
+elif ch.isdigit:
+    print("The character is a digit")
+else:
+    print("The character is a special character")
+    
+    
+~ i/p = ['pro.html', 'google.com', 'pro1.txt']
+o/p = {'html' : 'pro', 'com' : 'google', 'txt' : 'pro1'}
+l = ['pro.html', 'google.com', 'pro1.txt']
+d = {}
+for i in l:
+    key = i.split('.')[-1]
+    value = i.split('.')[0]
+    d[key] = value
+
+print(d)
+
+
 '''
-
-
-
-
