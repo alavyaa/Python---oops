@@ -583,6 +583,30 @@ def find_string(*t):
 find_string(*s)
 
 
+~ combination Packing
+def pack(*a, **b):
+    print(type(a))
+    print(a)
+    print(type(b))
+pack(12, 3, a = 1, b = 2)
+pack(10, 20, 30)
+pack(a = 1, b = 2, c = 3)
+pack()
+
+~ unpacking 
+def unpack(v1, v2, v3, v4):
+    print(v1, v2, v3, v4)
+unpack(*"abcd")
+unpack(*[10, 20, 30, 40])
+unpack(*(1, 2, 3, 4))
+unpack(*{12, 27, 56, 78})
+unpack(*{"a" : 10, "b" : 20, "c" : 30, "d" : 40})
+unpack(*{"a" : 10, "b" : 20, "c" : 30, "d" : 40}.values())
+unpack(*{"a" : 10, "b" : 20, "c" : 30, "d" : 40}.items())
+unpack(*range(1,5))
 
 '''
+
+def unpack(v1, v2, v3, v4):
+    print(v1, v2, v3, v4)
 
