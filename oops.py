@@ -562,5 +562,27 @@ for i in l:
 
 print(d)
 
+~ wap to find the string values from a tuple using package
+
+s = (10, "hello", 3.4, "python", 2+3j, 'bye', False)
+out = []
+def find_string(*t):
+    for i in t:
+        if type(i) is str:
+            out.append(i)
+    return out
+print(find_string(*s))
+
+
+~ wap to print all the values from a tuple using package
+
+s = (10, "hello", 3.4, "python", 2+3j, 'bye', False)
+def find_string(*t):
+    for i in t:
+        print(i)
+find_string(*s)
+
+
 
 '''
+
