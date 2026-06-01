@@ -607,6 +607,4 @@ unpack(*range(1,5))
 
 '''
 
-def unpack(v1, v2, v3, v4):
-    print(v1, v2, v3, v4)
-
+ 
