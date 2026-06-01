@@ -605,6 +605,14 @@ unpack(*{"a" : 10, "b" : 20, "c" : 30, "d" : 40}.values())
 unpack(*{"a" : 10, "b" : 20, "c" : 30, "d" : 40}.items())
 unpack(*range(1,5))
 
+Pillars of OOPS
+1. Inheritance                               Example: Parents, Child
+2. Encapsulation
+3. Abstraction                               Example: ATM, Car
+4. Polymorphism                              Example: Mobile Phone
+
+
+
 '''
 
  

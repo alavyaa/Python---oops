@@ -76,5 +76,21 @@
 # m1.display()
 # m2.display()
 
-
+# class A:
+#     def __init__(self):
+#         print('Hi')
+#     def __init__(self):
+#         print('Hello')
+# a = A()     
+# output : Hello 
+# cause it overwrites
     
+    
+class A:
+    def display(self):
+        print("Hello")
+    def display(self):
+        print("Bye - Bye")
+a = A()
+a.display()
+
