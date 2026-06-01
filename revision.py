@@ -46,14 +46,35 @@
 
 #~ create a class called employee requirements => usee init to initialise emp_name, emp_id, emp_sal,  create object method to display thee result
 
-class Employee:
-    def __init__(self, emp_name, emp_id, emp_sal):
-        self.emp_name = emp_name
-        self.emp_id = emp_id
-        self.emp_sal = emp_sal
-    def display(self):
-        print(self.emp_name, self.emp_id, self.emp_sal)
-emp1 = Employee("alavya", 23, 3900000000000000)
-emp2 = Employee("Abs", 34, 56)
-emp1.display()
-emp2.display()
+# class Employee:
+#     def __init__(self, emp_name, emp_id, emp_sal):
+#         self.emp_name = emp_name
+#         self.emp_id = emp_id
+#         self.emp_sal = emp_sal
+#     def display(self):
+#         print(self.emp_name, self.emp_id, self.emp_sal)
+# emp1 = Employee("alavya", 23, 3900000000000000)
+# emp2 = Employee("Abs", 34, 56)
+# emp1.display()
+# emp2.display()
+
+#~ create a class called mobile requirements brand price using obj members, 2 different objects , display both object details separately
+#add a class member called category = electronics
+
+# class Mobile:
+#     category = 'electronics'
+#     def __init__ (self, brand, price):
+#         self.brand = brand
+#         self.price = price
+#     def display (self):
+#         print(self.brand)
+#         print(self.category)
+#         print(self.price)
+        
+# m1 = Mobile("Realme", 13000)
+# m2 = Mobile("Oppo", 9000)
+# m1.display()
+# m2.display()
+
+
+    
