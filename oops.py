@@ -331,7 +331,7 @@ st2.display()
 2. class method
 It is used to access and modify the class members
 We need to use "cls" as an argument to store the address of the class members.And it is compulsary to use 
-@classmethod is the decorative to use
+@classmethod is the decorator to use 
 
 Syntax:
 
