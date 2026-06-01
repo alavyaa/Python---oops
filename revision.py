@@ -36,10 +36,24 @@
 # print(emp2.branch, emp2.ceo, emp2.email, emp2.project, emp2.project_type, emp2.salary, emp2.number, emp2.position)
 # print(emp3.branch, emp3.ceo, emp3.email, emp3.project, emp3.project_type, emp3.salary, emp3.number, emp3.position)
 
-class A:
-    a= 10
-    def __init__(self):
-        print(self.a)
-obj= A()
-print(obj)
-print(A())
+# class A:
+#     a= 10
+#     def __init__(self):
+#         print(self.a)
+# obj= A()
+# print(obj)
+# print(A())
+
+#~ create a class called employee requirements => usee init to initialise emp_name, emp_id, emp_sal,  create object method to display thee result
+
+class Employee:
+    def __init__(self, emp_name, emp_id, emp_sal):
+        self.emp_name = emp_name
+        self.emp_id = emp_id
+        self.emp_sal = emp_sal
+    def display(self):
+        print(self.emp_name, self.emp_id, self.emp_sal)
+emp1 = Employee("alavya", 23, 3900000000000000)
+emp2 = Employee("Abs", 34, 56)
+emp1.display()
+emp2.display()
