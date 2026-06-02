@@ -744,7 +744,56 @@ super.<method_name>(args)
  OR
 <class_name>.<method_name>(args)
 
+~ create a multi level inheritance class A me method 1 then class B method 2 and Class C method 3 but the point sare methods ke name same 
+  print 1 me hello 2 me world 3 hello world
+class A:
+    def show(self):
+        print("Hello")
+class B(A):
+    def show(self):
+        A.show(self)
+        print("World")
+class C(B):
+    def show(self):
+        B.show(self)
+        print("Hello World")
+        
+obj =  C()
+obj.show()
 
+point:  agar super use kar rahe hai to self nhi dalna pad raha hai but agar class name se kar rahe hai to hame self use karna pad raha hai 
+
+3. Multiple Inheritence
+it is a phenona of deriving the properties from multiple parent class to single child class
+
+Syntax:
+class P1:
+    a / m
+class P2:
+    a / m
+class C1(P1, P2):
+    a / m
+
+~ create two parent class 
+1. class A with method show that prints "hello from A"
+2. class B with method display that prints "hello from B"
+3. create a child class C that inherit A and B 
+class A:
+    def show(self):
+        print("hello from A")
+class B:
+    def display(self):
+        print("hello from B")
+class C(A, B):
+    pass
+
+obj = C()
+
+obj.show()
+obj.display()
+
+
+4. Hieraarichal Inheritance
 
 
 
@@ -759,4 +808,3 @@ super.<method_name>(args)
 
 
 
-        
