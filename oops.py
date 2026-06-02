@@ -691,6 +691,44 @@ emp1 = Developer()
 emp1.display()
 
 
+2. Multi Level Inheritance
+It is a phenomenon of driving properties from parent class or from one class to another class by considering more than one level
+in this case the last derived class will be having all the properties of its parent class
+it can easily access all the attributes of all the parent class
+
+Syntax:
+class C1:
+    a / m
+class C2(C1):
+    a / m
+and so on...
+
+~ create a parent class BAnk with a constructor branch name , manager name, next class atm constructor hoga print branch name manager name
+and account number class atm2 (atm)  
+
+this question cant be done easily so we use constructor chaining 
+we need to use super()
+class Bank:
+    def __init__(self):
+        self.branch_name = 'Powayan'
+        self.manager_name = 'Alavya'
+class ATM(Bank):
+    def __init__(self):
+        super().__init__()
+        self.account_number = 345687263789
+        self.ifsc_code = '123AFY78923'
+class ATM2(ATM):
+    def __init__(self):
+        super().__init__()
+        print(self.branch_name)
+        print(self.manager_name)
+        print(self.account_number)
+        print(self.ifsc_code)
+        
+cust1 = ATM2()
+
+
+
 
 
 
@@ -701,3 +739,5 @@ emp1.display()
 
 
 
+
+        
