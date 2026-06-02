@@ -120,7 +120,7 @@ The data or information stored inside a class or an object is known as property 
 OR
 The variable or functionalities storing inside the class are called states.
 
-There are are two types of states:-
+There are two types of states:-
 1. Generic State/ Class State/ Static State
 2. Object State/ Specific State
 
@@ -612,7 +612,48 @@ Pillars of OOPS
 4. Polymorphism                              Example: Mobile Phone
 
 
+1. Inheritance
+it is a process of inheriting or invoking the properties or attributes of parent class to child class is known as inheritance
+
+How to create inheritance class
+
+syntax:
+class <class_name>:
+    Attributes/ methods
+class <child_class>(<class_name>):
+
+Example:
+class Animal:                                     ~ Parent Class  / Base class
+    a = 'snake'
+    b = 'dog'
+
+class Birds(Animal):                              ~ Child Class   / Derived class
+    c = 'Penguin'
+
+f = Animal()
+g = Birds() 
+
+print(f.a, f.b, g.a, g.b, g.c)
+
+~ always create your object by using your child class
+ 
+ 
+ ~q. create one inheritance class where class name is A which is parent class and there is one second class child class B
+     in class A there is a method show which prints hello in class B there is a method named display which print Hello world 
+
+
 
 '''
 
- 
+class A:
+    def show(self):
+        print("Hello")
+
+class B(A):
+    def display(self):
+        print("Hello World")
+
+g = B() 
+g.show()
+g.display()
+
