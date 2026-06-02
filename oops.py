@@ -663,6 +663,35 @@ Types Of Inheritance
 5. Hybrid Inheritance
 
 
+1. Single Level Inheritance
+one parent class and one child class
+the child class can inherit all the properties of parent class
+
+Syntax:
+class <class_name>:
+    Attributes/ methods
+class <child_class>(<class_name>):
+    Attributs/ methods
+
+~ create a parent class employee attributes employee name and salary then make a child class developer attributs programming languange 
+  and project and display method jab usko call karenge to sari details aayengi 
+class Employee:
+    name = "Alavya"
+    salary = 2389045
+class Developer(Employee):
+    programming_language = "Python"
+    project = "AIML"
+    def display(self):
+        print("Name: ", self.name)
+        print("Salary: ", self.salary)
+        print("Programming Language: ", self.programming_language)
+        print("Project: ", self.project)
+
+emp1 = Developer()
+emp1.display()
+
+
+
 
 
 
@@ -670,15 +699,5 @@ Types Of Inheritance
 
 '''
 
-class A:
-    def show(self):
-        print("Hello")
 
-class B(A):
-    def display(self):
-        print("Hello World")
-
-g = B() 
-g.show()
-g.display()
 
