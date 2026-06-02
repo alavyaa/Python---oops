@@ -635,11 +635,36 @@ g = Birds()
 
 print(f.a, f.b, g.a, g.b, g.c)
 
-~ always create your object by using your child class
+always create your object by using your child class
  
  
- ~q. create one inheritance class where class name is A which is parent class and there is one second class child class B
-     in class A there is a method show which prints hello in class B there is a method named display which print Hello world 
+~ create one inheritance class where class name is A which is parent class and there is one second class child class  
+  in class A there is a method show which prints hello in class B there is a method named display which print Hello world 
+class A:
+    def show(self):
+        print("Hello")
+
+class B(A):
+    def display(self):
+        print("Hello World")
+
+g = B() 
+g.show()
+g.display()
+
+
+* if your function is using print dont use print if it is using return you have to use print
+
+Types Of Inheritance
+1. Single Level Inheritance
+2. Multi Level Inheritance
+3. Multiple Inheritance
+4. Hierarichal Inheritance 
+5. Hybrid Inheritance
+
+
+
+
 
 
 
