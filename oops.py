@@ -793,7 +793,53 @@ obj.show()
 obj.display()
 
 
-4. Hieraarichal Inheritance
+4. Hierarichal Inheritance
+it is the  phenona of deriving the properties, attributes , methods from  a single parent class to multiple chils class
+
+Syntax:
+class A:
+    a / m
+class B(A):
+    a / m
+class C(A):
+    a / m
+class D(A):
+    a / m
+
+~ create a parent class vehicle with attributes vehicle name and vehicle number 
+create two child class Car and bike 
+create an object method for car and bike where in car class declare fuel type as attribute inside that print vehicle number and 
+vehicle name and also the fuel type 
+class Vehicle:
+    vehicle_name = "BMW"
+    vehicle_number = 23
+class Car(Vehicle):
+    def B(self):
+        self.fuel_type = "Diesel"
+        print("Name: ", self.vehicle_name)
+        print("Number: ", self.vehicle_number)
+        print("Fuel Type: ", self.fuel_type)
+class Bike(Vehicle):
+    def B(self):
+        self.cc = "1800cc"
+        print("Name: ", self.vehicle_name)
+        print("Number: ", self.vehicle_number)
+        print("CC: ", self.cc)
+
+v1 = Car()
+v1.B()
+
+v2 = Bike()
+v2.B()
+
+
+5. Hybrid Inheritence
+combination of more than one or two or more types of inheritence
+
+Syntax:
+
+
+
 
 
 
@@ -804,7 +850,3 @@ obj.display()
 
 
 '''
-
-
-
-
