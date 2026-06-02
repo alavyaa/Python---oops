@@ -727,6 +727,25 @@ class ATM2(ATM):
         
 cust1 = ATM2()
 
+Constructor Chaining
+it is the process of calling and invoking the parent class constructor inside child class constructor 
+in cunstructor chaining we have to follow the syntax 
+Syntax:
+super().__init__(arguments)
+ OR
+<class_name>.__init__(arguments) 
+
+
+Method Chaining
+it is the process of calling or invoking parent class method inside the child class method
+used to avoid overwriting
+Syntax:
+super.<method_name>(args)
+ OR
+<class_name>.<method_name>(args)
+
+
+
 
 
 
