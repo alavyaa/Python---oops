@@ -878,6 +878,10 @@ obj2 = A(20)
 obj + obj2
 
 2.method overriding
+whenn we use same function name for two or more operations then the first function address will get overridden by the 
+address of next function
+if you want to access a particular method we have to make use of monkey patching concept
+
 class A:
     def display(self):
         print("a python")
@@ -889,7 +893,11 @@ obj = A()
 obj.display()
 here we get outpuut tata as override kar gaya same name tabhi
 if we want first one to access we use monkey patching
-in this we create a variable and then store the method address in that variable
+in this we create a variable and then store the method address in that variable 
+
+Monkey Patching
+storing previous method address to a variable and accessing that method using the variable
+
 class A:
     def display(self):
         print("a python")
@@ -905,6 +913,20 @@ obj.display()
 obj.a()
 obj.b()
 obj.c()
+
+agar sabko access karna to super() use karte and agar ek ek karke karna to monkey patching
+
+3. Method Overloading
+class A:
+    def show(self, a):
+        print(self.a)
+    def show(self, a, b):
+        print(self.a + self.b)
+    def show(self, a, b, c):
+        print(self.a + self.b + self.c)
+obj = A()
+obj.show(10, 20)
+gives an error because overloading nahi hoti python ne
 
 
 
@@ -921,17 +943,12 @@ obj.c()
 '''
 
 class A:
-    def display(self):
-        print("a python")
-    a = display
-    def display(self):
-        print("Hello")
-    b = display
-    def display(self):
-        print("TATA")
-    c = display
+    def show(self, a):
+        print(self.a)
+    def show(self, a, b):
+        print(self.a + self.b)
+    def show(self, a, b, c):
+        print(self.a + self.b + self.c)
 obj = A()
-obj.display()
-obj.a()
-obj.b()
-obj.c()
+obj.show(10, 20)
+
