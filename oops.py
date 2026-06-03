@@ -932,7 +932,23 @@ in python we are going to perform method overloading it will act as a method ove
 but in python we can achieve overloading with the help of default parameter concept 
 
 
+3. Encapsulation
+it is the concept of oops that means wrapping the data attributes variables methods inside a function or insiide a class that operates on
+that data into a single unit
+and restricting the direct access to the components
+encapsulation means it is the process of hiding the details of an object and allowing the access only through control methods
+it is the combination of data hiding and abstraction
 
+How to achieve the encapsulation by access specifiers
+
+1. public access specifier
+2. protected access specifier ( _ )
+3. private access specifier ( __ )
+
+By default all the attributes are public access specifier
+
+
+1. public access specifier
 
 
 
@@ -945,10 +961,9 @@ but in python we can achieve overloading with the help of default parameter conc
 '''
 
 class A:
-    def show(self, *a):
-        print(sum(a))
+    a = 10
+    b = 20
 obj = A()
-obj.show(10)
-obj.show(23, 34, 12)
+print(obj.a)
 
 
