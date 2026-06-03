@@ -989,6 +989,9 @@ print(obj._name)
 
 
 3. private access specifier
+these are the members of the class which will provide security to the members present inside the class 
+to make private members it is cumpolsary to make use of __ before the variable name or method name
+private members can not be accessed in the derived class but we can still access by using name mangling
 
 class A:
     __salary = 2555555555555555766666666666628555557618622222222222222222222222643658723463746573465872461837428648236475676
@@ -1026,7 +1029,8 @@ print(obj._A__salary)
 '''
 
 class A:
-    __salary = 2555555555555555766666666666628555557618622222222222222222222222643658723463746573465872461837428648236475676
+    __salary = 2576285761862643658723463746573465872461837428648236475676
+
     __company = "Google"
 
 class B(A):
@@ -1036,5 +1040,3 @@ class B(A):
 obj = B()
 obj._B__show()
 print(obj._A__salary)
-
-
