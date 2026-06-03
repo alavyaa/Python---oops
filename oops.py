@@ -927,7 +927,9 @@ class A:
 obj = A()
 obj.show(10, 20)
 gives an error because overloading nahi hoti python ne
-
+it is the process of using the same method name to perform two or more different operation 
+in python we are going to perform method overloading it will act as a method overloading
+but in python we can achieve overloading with the help of default parameter concept 
 
 
 
@@ -943,12 +945,10 @@ gives an error because overloading nahi hoti python ne
 '''
 
 class A:
-    def show(self, a):
-        print(self.a)
-    def show(self, a, b):
-        print(self.a + self.b)
-    def show(self, a, b, c):
-        print(self.a + self.b + self.c)
+    def show(self, *a):
+        print(sum(a))
 obj = A()
-obj.show(10, 20)
+obj.show(10)
+obj.show(23, 34, 12)
+
 
