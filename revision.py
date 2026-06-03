@@ -143,3 +143,6 @@ cust1.display()
 cust1.update()
 cust1.display()
 
+'''
+to combine two sets we use union method
+'''

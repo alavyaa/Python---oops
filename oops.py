@@ -833,10 +833,33 @@ v2 = Bike()
 v2.B()
 
 
+
 5. Hybrid Inheritence
 combination of more than one or two or more types of inheritence
+can take reference from the flow chart 
 
-Syntax:
+
+2. Polymorphism
+poly -> many
+morphism -> forms
+it is the phenomena of making the same operator or method to perform two or more operations   
++ is an example of polymorphism 
+add for int
+concatinate for strings
++ has a different method behing it which is __add__ which are called dunder or magic or special method
+print(int.__add__(10,20))
+
+How to achieve polymorphism
+there are three methods
+
+1. operator overloading
+2. method overriding
+3. method overloading
+
+
+ 
+
+
 
 
 
