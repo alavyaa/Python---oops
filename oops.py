@@ -703,7 +703,8 @@ class C2(C1):
     a / m
 and so on...
 
-~ create a parent class BAnk with a constructor branch name , manager name, next class atm constructor hoga print branch name manager name
+~ create a parent class BAnk with a constructor branch name , manager name, next class atm constructor 
+hoga print branch name manager name
 and account number class atm2 (atm)  
 
 this question cant be done easily so we use constructor chaining 
@@ -966,6 +967,22 @@ obj = B()
 obj.show()
 by default all classes we create are public
 
+2. protected access specifier
+class A:
+    
+    def __init__(self):
+        self._name = "Alavya"
+        self._salary = 2431273662263832686334312
+
+class B(A):
+
+    def show(self):
+        print(self._name, self._salary)
+obj = B()
+obj.show()
+
+
+print(obj._name)
 
 
 
@@ -976,15 +993,17 @@ by default all classes we create are public
 '''
 
 class A:
-    a = "Alu"
-def show(self):
-    print(self.a)
+    
+    def __init__(self):
+        self._name = "Alavya"
+        self._salary = 2431273662263832686334312
 
 class B(A):
-    b = "Alavya"
+
     def show(self):
-        print(self.a, self.b)
+        print(self._name, self._salary)
 obj = B()
 obj.show()
 
 
+print(obj._name)
