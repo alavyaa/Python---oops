@@ -878,7 +878,33 @@ obj2 = A(20)
 obj + obj2
 
 2.method overriding
-
+class A:
+    def display(self):
+        print("a python")
+    def display(self):
+        print("Hello")
+    def display(self):
+        print("TATA")
+obj = A()
+obj.display()
+here we get outpuut tata as override kar gaya same name tabhi
+if we want first one to access we use monkey patching
+in this we create a variable and then store the method address in that variable
+class A:
+    def display(self):
+        print("a python")
+    a = display
+    def display(self):
+        print("Hello")
+    b = display
+    def display(self):
+        print("TATA")
+    c = display
+obj = A()
+obj.display()
+obj.a()
+obj.b()
+obj.c()
 
 
 
@@ -895,11 +921,17 @@ obj + obj2
 '''
 
 class A:
-    def __init__(self, a):
-        self.a = a
-    def __add__(self, other):
-        print( self.a + other.a )
-        print( self.a - other.a)
-obj = A(10)
-obj2 = A(20)
-obj + obj2
+    def display(self):
+        print("a python")
+    a = display
+    def display(self):
+        print("Hello")
+    b = display
+    def display(self):
+        print("TATA")
+    c = display
+obj = A()
+obj.display()
+obj.a()
+obj.b()
+obj.c()
