@@ -968,6 +968,10 @@ obj.show()
 by default all classes we create are public
 
 2. protected access specifier
+in protected access specifer variables or methods that is intended to be accessed within the class and its child class
+in python protected members are represented by _ 
+we have to mention single _ before the attribute name or method name
+
 class A:
     
     def __init__(self):
@@ -981,9 +985,38 @@ class B(A):
 obj = B()
 obj.show()
 
-
 print(obj._name)
 
+
+3. private access specifier
+
+class A:
+    __salary = 2555555555555555766666666666628555557618622222222222222222222222643658723463746573465872461837428648236475676
+    __company = "Google"
+
+class B(A):
+
+    def show(self):
+        print(self.__salary, self.__company)
+obj = B()
+obj.show()
+print(obj.__salary)
+BY USING NAME MANGLING WE CAN ACCESS THE PRIVATE ATTRIBUTES
+
+print(obj._A__salary)
+
+~ make a private method inside this code and access it using name mangling
+class A:
+    __salary = 2576285761862643658723463746573465872461837428648236475676
+    __company = "Google"
+
+class B(A):
+
+    def __show(self):
+        print("Hello")
+obj = B()
+obj._B__show()
+print(obj._A__salary)
 
 
 
@@ -993,17 +1026,15 @@ print(obj._name)
 '''
 
 class A:
-    
-    def __init__(self):
-        self._name = "Alavya"
-        self._salary = 2431273662263832686334312
+    __salary = 2555555555555555766666666666628555557618622222222222222222222222643658723463746573465872461837428648236475676
+    __company = "Google"
 
 class B(A):
 
-    def show(self):
-        print(self._name, self._salary)
+    def __show(self):
+        print("Hello")
 obj = B()
-obj.show()
+obj._B__show()
+print(obj._A__salary)
 
 
-print(obj._name)
