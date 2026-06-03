@@ -949,7 +949,22 @@ By default all the attributes are public access specifier
 
 
 1. public access specifier
+public member can be accessed outside the class and also in derived class
+the normal members that we are created in a normal class act as a public member
+there is no need of _ or any kind of initialisation for public access specifier
 
+class A:
+    a = "Alu"
+def show(self):
+    print(self.a)
+
+class B(A):
+    b = "Alavya"
+    def show(self):
+        print(self.a, self.b)
+obj = B()
+obj.show()
+by default all classes we create are public
 
 
 
@@ -961,9 +976,15 @@ By default all the attributes are public access specifier
 '''
 
 class A:
-    a = 10
-    b = 20
-obj = A()
-print(obj.a)
+    a = "Alu"
+def show(self):
+    print(self.a)
+
+class B(A):
+    b = "Alavya"
+    def show(self):
+        print(self.a, self.b)
+obj = B()
+obj.show()
 
 
