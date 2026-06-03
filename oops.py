@@ -856,8 +856,28 @@ there are three methods
 2. method overriding
 3. method overloading
 
+1. Operator Overloading
+class A:
+    def __init__(self, a):
+        self.a = a
+    def __add__(self, other):
+        return self.a + other.a
+obj = A(10)
+obj2 = A(20)
+print(obj + obj2)
+when we code in class and objects we need to use methods to use operators like + and all 
+this is known as operator overloading
+class A:
+    def __init__(self, a):
+        self.a = a
+    def __add__(self, other):
+        print( self.a + other.a )
+        print( self.a - other.a)
+obj = A(10)
+obj2 = A(20)
+obj + obj2
 
- 
+2.method overriding
 
 
 
@@ -873,3 +893,13 @@ there are three methods
 
 
 '''
+
+class A:
+    def __init__(self, a):
+        self.a = a
+    def __add__(self, other):
+        print( self.a + other.a )
+        print( self.a - other.a)
+obj = A(10)
+obj2 = A(20)
+obj + obj2
