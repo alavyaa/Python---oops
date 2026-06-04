@@ -1038,7 +1038,7 @@ to create an abstract class
 from abc import ABC
 
 abstract method 
-it is the method which consist of function declarationbut not function implementation
+it is the method which consist of function declaration but not function implementation
 to make abstract method we have to use a decorater @abstractmethod
 Syntax:
 @abstractmethod
@@ -1171,6 +1171,82 @@ obj2 = Square()
 obj2.area()
 
 
+~ Employee
+create an abstract class Employee Create an abstract method salary(), upi_id(), project()
+create child class manager, developer, tester
+implement salary, empt_id and project inside manager developer . tester 
+from abc import ABC ,abstractmethod
+
+class Employee(ABC):
+    
+    @abstractmethod
+    def salary(self):
+        pass
+    
+    @abstractmethod
+    def emp_id(self):
+        pass
+    
+    @abstractmethod
+    def project(self):
+        pass
+    
+class Developer(Employee):
+
+    def salary(self):
+        self.s = 232445
+        print("Salary: ", self.s)
+        
+    def emp_id(self):
+        self.id = 23
+        print("ID: ", self.id)
+        
+    def project(self):
+        self.p = "Website"
+        print("Project: ", self.p)
+        
+class Manager(Employee):
+
+    def salary(self):
+        self.s = 8374676
+        print("Salary: ", self.s)
+        
+    def emp_id(self):
+        self.id = 67
+        print("ID: ", self.id)
+        
+    def project(self):
+        self.p = "Aiml"
+        print("Project: ", self.p)
+        
+class Tester(Employee):
+
+    def salary(self):
+        self.s = 643275
+        print("Salary: ", self.s)
+        
+    def emp_id(self):
+        self.id = 12
+        print("ID: ", self.id)
+        
+    def project(self):
+        self.p = "APP"
+        print("Project: ", self.p)
+    
+obj = Manager()
+obj.salary()
+obj.emp_id()
+obj.project()
+
+obj2 = Developer()
+obj2.salary()
+obj2.emp_id()
+obj2.project()
+
+obj3 = Tester()
+obj3.salary()
+obj3.emp_id()
+obj3.project()
 
 
 
@@ -1178,7 +1254,5 @@ obj2.area()
 
 
 '''
-
-
 
 
