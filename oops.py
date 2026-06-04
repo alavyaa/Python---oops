@@ -1065,6 +1065,11 @@ we create a child class
 abstract class is a blueprint 
 isse ghar banate uske liye we need child class then we create an object with child class
 
+
+concrete class
+it is the class which does not consist of any of the abstract method then we call it as concrete class
+it is possible to create an onject using concrete class or for the concrete class
+
 Example:
 from abc import ABC ,abstractmethod
 
