@@ -927,7 +927,7 @@ class A:
         print(self.a + self.b + self.c)
 obj = A()
 obj.show(10, 20)
-gives an error because overloading nahi hoti python ne
+gives an error because overloading nahi hoti python me
 it is the process of using the same method name to perform two or more different operation 
 in python we are going to perform method overloading it will act as a method overloading
 but in python we can achieve overloading with the help of default parameter concept 
@@ -994,7 +994,7 @@ to make private members it is cumpolsary to make use of __ before the variable n
 private members can not be accessed in the derived class but we can still access by using name mangling
 
 class A:
-    __salary = 2555555555555555766666666666628555557618622222222222222222222222643658723463746573465872461837428648236475676
+    __salary = 2576285761862643658723463746573465872461837428648236475676
     __company = "Google"
 
 class B(A):
@@ -1022,21 +1022,126 @@ obj._B__show()
 print(obj._A__salary)
 
 
+4. Abstraction
+it is the process of hiding the implementation details and showing the essential features of an object to th users 
+we will try to hide the actual implementation and only provide the features 
+to achieve abstraction we have to make an abstract class for that we have to import ABC and abstractmethod
+from abc import ABC, abstract method
+there are three main components of abstraction
+1. Abstract class
+2  Abstract method
+3. Concrete class
+
+abc is a module isse ABC ek file hai jisko import karna
+ABC = Abstract Base Class
+to create an abstract class
+from abc import ABC
+
+abstract method 
+it is the method which consist of function declarationbut not function implementation
+to make abstract method we have to use a decorater @abstractmethod
+Syntax:
+@abstractmethod
+def <method_name>(self):
+    pass
+
+abstract class
+It is the class in which we are trying to inherit ABC and it also consist of at least one abstract method
+it is not possible to create an object using abstract class
+Syntax:
+from abc import ABC, abstractmethod
+class <class_name>(ABC):
+    a / m
+
+
+class A(ABC):
+    a / m
+    
+to creare an abstract method 
+we use decorator @abstractmethod
+
+we never write our main logic in abstract class
+we create a child class
+abstract class is a blueprint 
+isse ghar banate uske liye we need child class then we create an object with child class
+
+Example:
+from abc import ABC ,abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def engine(self):
+        pass
+    
+class Car(Vehicle):
+    def fuel(self):
+        print("Hi")
+    
+obj = Car()
+obj.engine()
+
+Actual implementation
+the point is kuch factors ek blueprint me main hote hai which cant be neglected in any situation
+by any chance baad me jo developers hai vo bhul sakte is structure ko follow karna to consequences ho sakte hai
+to avoid these consequences we get an error when we dont use the abstract method 
+to avoid this kinda problems we use abstraction
+
+from abc import ABC ,abstractmethod
+
+class Payment(ABC):
+    @abstractmethod
+    def pay(self):
+        pass
+    
+class UPI(Payment):
+    def pay(self):
+        print("Payment is done with UPI")
+        
+class CreditCard(Payment):
+    def pay(self):
+        print("Payment is done with CC")
+        
+class Crypto(Payment):
+    def pay(self):
+        print("404")
+    
+obj = Crypto()
+
+any class jo abstract class ko inherit karti hai is known as concrete class
+
+
+
+
+
+
+
+
+
 
 
 
 
 '''
 
-class A:
-    __salary = 2576285761862643658723463746573465872461837428648236475676
+from abc import ABC ,abstractmethod
 
-    __company = "Google"
+class Payment(ABC):
+    @abstractmethod
+    def pay(self):
+        pass
+    
+class UPI(Payment):
+    def pay(self):
+        print("Payment is done with UPI")
+        
+class CreditCard(Payment):
+    def pay(self):
+        print("Payment is done with CC")
+        
+class Crypto(Payment):
+    def pay(self):
+        print("404")
+    
+obj = Crypto()
 
-class B(A):
 
-    def __show(self):
-        print("Hello")
-obj = B()
-obj._B__show()
-print(obj._A__salary)
