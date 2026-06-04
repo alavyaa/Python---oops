@@ -1115,9 +1115,60 @@ obj = Crypto()
 any class jo abstract class ko inherit karti hai is known as concrete class
 
 
+~ create an abstract class shape with an abstract method area then create a child class which should have rectangle square and implement
+the area method inside child class
 
+from abc import ABC ,abstractmethod
 
+class Shape(ABC):
+    
+    @abstractmethod
+    def area(self):
+        pass
+    
+class Rectangle(Shape):
 
+    def area(self):
+        c = self.Length * self.Breadth
+        print("Area of rectangle: ", c)
+        
+class Square(Shape):
+
+    def area(self):
+        c = self.Length * self.Breadth
+        print("Area of Square: ", c)
+        
+    
+obj = Rectangle()
+obj.area()
+
+obj2 = Square()
+obj2.area()from abc import ABC ,abstractmethod
+
+class Shape(ABC):
+    
+    @abstractmethod
+    def area(self):
+        pass
+    
+class Rectangle(Shape):
+
+    def area(self):
+        c = self.Length * self.Breadth
+        print("Area of rectangle: ", c)
+        
+class Square(Shape):
+
+    def area(self):
+        c = self.Length * self.Breadth
+        print("Area of Square: ", c)
+        
+    
+obj = Rectangle()
+obj.area()
+
+obj2 = Square()
+obj2.area()
 
 
 
@@ -1128,25 +1179,6 @@ any class jo abstract class ko inherit karti hai is known as concrete class
 
 '''
 
-from abc import ABC ,abstractmethod
 
-class Payment(ABC):
-    @abstractmethod
-    def pay(self):
-        pass
-    
-class UPI(Payment):
-    def pay(self):
-        print("Payment is done with UPI")
-        
-class CreditCard(Payment):
-    def pay(self):
-        print("Payment is done with CC")
-        
-class Crypto(Payment):
-    def pay(self):
-        print("404")
-    
-obj = Crypto()
 
 
