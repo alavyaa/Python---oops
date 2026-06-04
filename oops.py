@@ -1267,4 +1267,11 @@ b = lambda a ,b: a*b
 print(b(10, 20))
 print((lambda a : a**3)(10))
 
+~ wap to check weather the number is greater or not
+if  the number is greater print(hi) else print (bye)
+by using lembda function
+
 '''
+
+b = lambda a,b : "Hi" if a > b else "Bye" 
+print(b(10, 20))
