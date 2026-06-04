@@ -27,6 +27,20 @@ print(b(10, 20))
 for if else condition we need to follow this syntax
 lambda argument : value1 if condition1 else value2
 
+b = lambda a : a**3 if a%2 != 0 else a**2 
+print(b(3))
 
+~ Some Examples
+
+b = lambda a,b,c : a if a > b and a > c else b if b > a and b > c else c  
+print(b(10, 654, 30))
+
+b = lambda a : "Positive" if a > 0 else "Negative" if a < 0 else "Zero"
+print(b(-10))
+
+b = lambda a,b : a*b
+print(b(10, 20))
+
+b = lambda a,b,c : (a*b*c) / 100 
+print(b(10, 20, 23))
 '''
-
