@@ -57,7 +57,7 @@ main space    |    Method Area
 ------------------------------
 in tldr
 
-Whenever we want to access the values from the class or object we have to use a suntax.
+Whenever we want to access the values from the class or object we have to use a syntax.
 
 For class :- ClassName.var
 For Object :- obj_name.var
@@ -165,7 +165,7 @@ st2.bg = "O+"
 print(st1.name, st1.id, st1.age, st1.bg, st1.sname, st1.loc, st1.principal, st1.time)
 print(st2.name, st2.id, st2.age, st2.bg, st2.sname, st2.loc, st2.principal, st2.time)
 
-Difference Betweek method and function.
+Difference Between method and function.
 
 Functions which we declare inside a class are known as methods.
 If we declare the function is known as functions.
@@ -374,7 +374,7 @@ st2.display()
 
 
 3. Static method
-It neither belongs to class members nor belongs to objectt members
+It neither belongs to class members nor belongs to object members
 but it will act as a supportive method for both class and object.
 decorator -> @staticmethod
 
@@ -762,10 +762,11 @@ class C(B):
 obj =  C()
 obj.show()
 
-point:  agar super use kar rahe hai to self nhi dalna pad raha hai but agar class name se kar rahe hai to hame self use karna pad raha hai 
+point:  agar super use kar rahe hai to self nhi dalna pad raha hai but
+agar class name se kar rahe hai to hame self use karna pad raha hai 
 
 3. Multiple Inheritence
-it is a phenona of deriving the properties from multiple parent class to single child class
+it is a phenomena of deriving the properties from multiple parent class to single child class
 
 Syntax:
 class P1:
@@ -795,7 +796,7 @@ obj.display()
 
 
 4. Hierarichal Inheritance
-it is the  phenona of deriving the properties, attributes , methods from  a single parent class to multiple chils class
+it is the  phenomena of deriving the properties, attributes , methods from  a single parent class to multiple chils class
 
 Syntax:
 class A:
@@ -892,7 +893,7 @@ class A:
         print("TATA")
 obj = A()
 obj.display()
-here we get outpuut tata as override kar gaya same name tabhi
+here we get output tata as override kar gaya same name tabhi
 if we want first one to access we use monkey patching
 in this we create a variable and then store the method address in that variable 
 
