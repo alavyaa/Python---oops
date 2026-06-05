@@ -1,5 +1,9 @@
 '''
 filter()
+filter function is a function which is used to get only the required data from the collection
+in this case this function which we are using should return either true or false
+in filter function if condition is satisfied it hold the value or else remove from the collection
+
 Syntax:
 filter(function, collection)
 
@@ -51,6 +55,4 @@ print(list(b))
 #8. filter the palindrome words from the list
 h = ["racecar", 'python', 'radar', 'madam']
 b = filter(lambda x: x[::-1] == x, h)
-print(list(b))
-
-#9. 
+print(list(b)) 
