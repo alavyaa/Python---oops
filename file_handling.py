@@ -60,10 +60,12 @@ read()
 f = open("Sample.txt", "r")
 # print(f.read(10))     # first 10 character
 # print(f.read(10))     # next 10 character
-print(f.readline())
-print(f.readline())
-print(f.readline())
-# print(f.readlines())
+# print(f.readline())
+# print(f.readline())
+print(f.readlines(15))
+# a = f.readlines()
+# print(a[2])
+
 
 f.close()
 
