@@ -1,1 +1,1 @@
-print(f.readlines())
+f.write("hemloo")

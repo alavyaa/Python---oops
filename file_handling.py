@@ -39,34 +39,47 @@ it is used to read the data from the file
 in this case if file does not exist then controller will throw error
 in read mode we have 3 types of operation
 1. read()
+it is a function which is used to read the content which is present inside the file
+argument is not mandatory
+it only acceps integer argument
+it will read only that numbers of characters
+
 2. readline()
+it is a function which is used to read a particular line from the file and it is possible to read line by line data
+
 3. readlines()
+in this function it will read all lines from a file and return a list of string
+ 
+ 
+append mode
+this mode is almost similar to write mode
+but  if file already exist then controller will add the new data to the existing file
+without performing overriding
+in append we have two types of function
+1. write()
+2. writelines()
+
+Syntax:
+var = open("path/ file_name", "a")
+in append we have two operations
+
+tell()
 
 
 
-
-
-
-in write mode we havee 2 methods
-write()
-writelines()
-Syntax: 
-f.writelines(iterables/collections)
-
-read()
 
 '''
 
-f = open("Sample.txt", "r")
+f = open("Sample.txt", "a")
 # print(f.read(10))     # first 10 character
 # print(f.read(10))     # next 10 character
 # print(f.readline())
 # print(f.readline())
-print(f.readlines(15))
+# print(f.readlines(15))
 # a = f.readlines()
 # print(a[2])
-
-
+# f.write("hemloo")
+print(f.tell())
+f.seek(34)
+print(f.tell())
 f.close()
-
-
