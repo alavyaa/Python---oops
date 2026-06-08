@@ -19,12 +19,8 @@ var = [var for var in collection or range]
 var = [TSB if condition else FSB for var in collection]
 
 var = [var1, var2 for var1 in collection for var2 in collection]
-
-
-~ wap to create a list consisting of 1 to 10 int value [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-
 '''
+
 c = [i for i in range(1, 201)]
 print(c)
 
