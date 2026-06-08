@@ -14,7 +14,7 @@ to perform list comprehension we have 3 syntaxes
 
 Syntax:
 
-var = [val of var in collection if condition]
+var = [var for var in collection or range]
 
 var = [TSB if condition else FSB for var in collection]
 
@@ -25,3 +25,9 @@ var = [var1, var2 for var1 in collection for var2 in collection]
 
 
 '''
+c = [i for i in range(1, 201)]
+print(c)
+
+c = [i for i in range(1, 201) if i % 2 == 0]
+print(c)
+

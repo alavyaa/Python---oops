@@ -24,7 +24,7 @@ it is an instance or example of a class
 
 syntax:-
 obj_name = ClassName(arguments) or obj_name = ClassName()
-here arguments are ooptional  
+here arguments are optional  
 it creates an object when we call the class,
 the object address should be stored in variable
 
