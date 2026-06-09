@@ -13,7 +13,7 @@ in the mode of operation writing the data into the file or reading from the file
 we have to use modes 
 
 mode of operation 
-classifief into 3 types
+classified into 3 types
 1. Write  -> write(), writelines(), "w+"
 2. Read   
 3. Append
