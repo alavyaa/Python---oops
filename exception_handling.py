@@ -66,7 +66,18 @@ try:
 except AgeError as E:
     print(E)
     
+final structure of Exception Handling
+try:
+    SB
+except:
+    SB
+except:
+    SB
+finally:
+    SB
+    
+finally is mandatory to use
+finally will always execute
 
 
 '''
-
