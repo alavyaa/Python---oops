@@ -44,14 +44,29 @@ try:
 except:
     statement block
 
+Two types of default ex. handling
+1. Custom Exception handling
+Syntax:
+raise <exception> ("message")
 
+2. User-Defined Exception handling
+class Error_name(Exception):
+    pass
+raise Error_name('message')
 
-
+For Example:
+class AgeError(Exception):
+    pass
+try:
+    a = int(input("Enter your age: "))
+    if a < 18:
+        raise AgeError('Not Eligible')
+    else:
+        print("Eligible")
+except AgeError as E:
+    print(E)
+    
 
 
 '''
-try:
-    while True:
-        print("Alavya")
-except:
-    print("hihihi")
+
