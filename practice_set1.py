@@ -79,3 +79,6 @@ studentDegree = ResumeDegree(
 
 studentDegree.display_degree()
 
+a = int(input("Enter a value: "))
+b = int(input("Enter another value: "))
+print(a/b)
