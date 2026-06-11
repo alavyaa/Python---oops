@@ -5,7 +5,7 @@ Syntax:
 
 map(function, collection)
 
-map(a, lambda x : x*x)
+map(lambda x : x*x, a)
 
 a = [10, 20, 30, 40, 50]
 b = map(lambda x : x*x, a)
