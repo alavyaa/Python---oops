@@ -102,46 +102,46 @@
 # constructor should initialize cust name , product list total amount
 # object method = add method , remove product , update platform name , display
 
-class ShoppingCart:
-    platform_name = "Amazon"
+# class ShoppingCart:
+#     platform_name = "Amazon"
     
-    def __init__ (self, customer_name, product_list, total_amount):
-        self.customer_name = customer_name
-        self.product_list = product_list
-        self.total_amount = total_amount
+#     def __init__ (self, customer_name, product_list, total_amount):
+#         self.customer_name = customer_name
+#         self.product_list = product_list
+#         self.total_amount = total_amount
     
-    def add(self):
-        self.product_list.append(input("Enter the product name: "))
-        self.price = int(input("Enter price of the product: "))
-        self.total_amount += self.price
+#     def add(self):
+#         self.product_list.append(input("Enter the product name: "))
+#         self.price = int(input("Enter price of the product: "))
+#         self.total_amount += self.price
     
-    @classmethod
-    def update(cls):
-        cls.platform_name = "Flipkart"
+#     @classmethod
+#     def update(cls):
+#         cls.platform_name = "Flipkart"
     
-    def remove(self):
-        self.product_name = input("Enter the product to be removed: ")
-        if self.product_name in self.product_list:
-            self.product_list.remove(self.product_name)
-            self.pricee = int(input("Enter the price of the product to be removed: "))
-            self.total_amount -= self.pricee
-        else:
-            print("Product not in list.")
+#     def remove(self):
+#         self.product_name = input("Enter the product to be removed: ")
+#         if self.product_name in self.product_list:
+#             self.product_list.remove(self.product_name)
+#             self.pricee = int(input("Enter the price of the product to be removed: "))
+#             self.total_amount -= self.pricee
+#         else:
+#             print("Product not in list.")
     
-    def display(self):
-        print("Platform: ", ShoppingCart.platform_name)
-        print("customer name : " , self.customer_name)
-        print("Product List: ", self.product_list)
-        print("Total Amount: ", self.total_amount)
+#     def display(self):
+#         print("Platform: ", ShoppingCart.platform_name)
+#         print("customer name : " , self.customer_name)
+#         print("Product List: ", self.product_list)
+#         print("Total Amount: ", self.total_amount)
         
-cust1 = ShoppingCart("Alavya", ['apple', 'banana'], 89)
-cust1.display()
-cust1.add()
-cust1.display()
-cust1.remove()
-cust1.display()
-cust1.update()
-cust1.display()
+# cust1 = ShoppingCart("Alavya", ['apple', 'banana'], 89)
+# cust1.display()
+# cust1.add()
+# cust1.display()
+# cust1.remove()
+# cust1.display()
+# cust1.update()
+# cust1.display()
 
 '''
 to combine two sets we use union method
