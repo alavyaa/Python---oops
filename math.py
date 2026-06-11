@@ -39,5 +39,3 @@ math.log10()
 gives log value with base 10
 
 '''
-import math
-print(math.pi)
