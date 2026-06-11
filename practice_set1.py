@@ -79,3 +79,16 @@ studentDegree = ResumeDegree(
 
 studentDegree.display_degree()
 
+
+
+
+sum1 = 0
+sum2 = 0
+sum3 = 0
+for i in range(1, 26):
+    sum1 += i
+for i in range(26, 51):
+    sum2 += i
+for i in range(51, 76):
+    sum3 += i
+print(sum1, sum2, sum3)
