@@ -30,7 +30,3 @@ print(random.sample(iterable, k parameter))
 jo bhi list pass ki usme se random k parameter elements and new list banayega 
 and k parameter should be less than length of list
 '''
-
-'''
-
-'''
