@@ -1,6 +1,6 @@
 '''
 Exception Handling
-==================
+
 Syntax:
 try:
     statement block
@@ -8,8 +8,7 @@ except error_name:
     statement block
 
 
-we only have one try block 
-but we can create n number of except block 
+we only have one try block but we can create n number of except block 
 
 we have 3 types of exception handling
 1. Specific Exception Handling
