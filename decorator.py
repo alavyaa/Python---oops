@@ -28,17 +28,10 @@ def greet():
     
 x = hih(greet)                                       ~ second tareeka which is internally being done
 x()
+
+Two types 
+1. Built-in
+2. User-defined
+
+
 '''
-def hih(alu):
-    def wrapper():
-        print('This is the start of decorator.')
-        alu()
-        print('This is the end of decorator')
-    return wrapper
-@hih
-def greet():
-    print("Good Morning")
-
-
-
-
