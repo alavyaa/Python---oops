@@ -35,10 +35,5 @@ def sam():
     yield 3
 print(list(sam()))
 # Output: hello hi bye [1,2,3]
-
-
-
-
-
 '''
  
