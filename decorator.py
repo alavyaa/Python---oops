@@ -7,7 +7,7 @@ def <decorator_name> (function_name):
     def wrapper(*args, **kwargs):
         pre task
         function_name(*args, **kwargs):
-            ost wrapper
+        post wrapper
     return wrapper
     
 @<decorator_name>
