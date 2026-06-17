@@ -95,4 +95,18 @@ reshape()
 to convert the dimension of the array to other 
 Syntax: variable.reshape(row, column, no. of elements)
 row * multiplication == no. of elements present in the array only then reshape is possible otherwise no
+soo if we have to change any 3D or 2D array to 1D array we use reshape(-1)
+this is known as flattening of the array
+
+ones()
+np.ones(argument)
+it will return an array with argument number of 1
+to create 2D or 3D just increase number or arguments and put them in double paranthesis
+arguments will be number of rows and number of columns
+
+zeroes()
+np.zeroes(argument)
+it will return an array with argument number of 0
+to create 2D or 3D just increase number or arguments and put them in double paranthesis
+arguments will be number of rows and number of columns
 '''
