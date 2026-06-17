@@ -57,6 +57,21 @@ c = np.array([
 )
 print(c)
 
+ndim()
 to check the dimension of the array we use ndim
 Syntax: variable.ndim
+
+dtype()
+to check the type of data in the array
+Syntax: variable.dtype
+if the data in integer we get output int64
+here 64 is the number of bits
+64 bits = 8 bytes
+1 byte = 8 bits
+
+astype()
+to covert type of data in array from one to other 
+Syntax: variable.astype(datatype)
+
+
 '''
