@@ -73,5 +73,26 @@ astype()
 to covert type of data in array from one to other 
 Syntax: variable.astype(datatype)
 
+arange()
+it accepts 3 arguments start value, ending value and the step size
+Syntax: np.arange(1, 20, 2)
+this is used when we want to create an array and noot type manually 
+starting index should be greater than ending index while passing negative step value
 
+linspace()
+to divide the equal no. of space between two values
+Syntax: np.linspace(start, end, space)
+it means jahan se start hora aur jahan pe end hora un dono numbers ki range jo hai usko space jitne number me divide karo us range ko 
+meaning end and start mila ke space number ki array honi chahiye
+
+shape()
+it tells the shape of the array 
+it returns a tuple which contains the number of elements for 1D
+while in others it return a tuple containing number of rows and columns
+Syntax: variable.shape
+
+reshape()
+to convert the dimension of the array to other 
+Syntax: variable.reshape(row, column, no. of elements)
+row * multiplication == no. of elements present in the array only then reshape is possible otherwise no
 '''
