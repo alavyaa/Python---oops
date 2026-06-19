@@ -109,4 +109,28 @@ np.zeroes(argument)
 it will return an array with argument number of 0
 to create 2D or 3D just increase number or arguments and put them in double paranthesis
 arguments will be number of rows and number of columns
+
+Operations on Arrays
+Relationship between operands and operations is known as operation
+There are different types of operations
+
+1. Arithmetic Operation
+import numpy as np
+# Array
+arr1 = np.array([1, 2, 3, 4, 5, 6])
+arr2 = np.array([7, 8, 9, 10, 11, 12])
+res = arr1 + arr2
+print(res)
+
+arr = np.array([1,2,3,4,5])
+x = 11
+result = arr + x
+result
+
+2. Relational Operator
+arr = np.array([1,2,3,4,5])
+x = 11
+result = arr.all and x
+
+3. 
 '''
