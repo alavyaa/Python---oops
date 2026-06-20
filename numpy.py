@@ -132,5 +132,5 @@ arr = np.array([1,2,3,4,5])
 x = 11
 result = arr.all and x
 
-3. 
+3. p
 '''
