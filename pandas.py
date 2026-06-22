@@ -19,4 +19,21 @@ Syntax to create a series:
 import pandas as pd
 var = pd.Series(array)
 
+
+DataFrame
+a string dataa in a structured way
+table like structure
+rows and columns
+
+Syntax:
+import pandas as pd
+var = pd.DataFrame(Collection)
+
+the collection should be dictionary
+
+Example:
+import pandas as pd
+a = {'sname' : ['Rahul', 'Chandan', 'Ansh'], 'roll' : [1, 2, 3], 'mark' : [23, 45, 65], 'mock' : ['A', 'B', 'C']}
+d = pd.DataFrame(a)
+d
 '''
