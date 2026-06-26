@@ -45,7 +45,4 @@ df[(df['age'] < 18) & (df['survived'] == 1)]
 11.
 # females traveled in firstclass
 df[(df['sex'] == 'female') & (df['pclass'] == 1)]
-
-12.
-
 '''
